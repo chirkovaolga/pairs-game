@@ -1,0 +1,119 @@
+body {
+  background-color: #ffeaed;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  padding: 70px 50px 50px;
+  width: 900px;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border-radius: 50px;
+  background-color: #ddadaf;
+  font-size: 0;
+  color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.card:hover {
+  background-color: #f6cbd2;
+}
+
+.card:active {
+  background-color: #d09da6;
+}
+
+.card-open {
+  font-size: 70px;
+  color: #4f3d40;
+  background-color: #a27c82;
+  cursor: default;
+}
+
+.card-open:hover {
+  background-color: #a27c82;
+}
+
+.card-success {
+  font-size: 70px;
+  color: #ffeaed;
+  background-color: #4f3d40;
+  cursor: default;
+}
+
+.card-success:hover {
+  background-color: #4f3d40;
+}
+
+.win {
+  position: absolute;
+  left: 162px;
+  top: 170px;
+  padding: 50px;
+  border-radius: 50px;
+  border: solid 5px #292223;
+  font-size: 70px;
+  color: #292223;
+  background-color: #f1d0d5;
+}
+
+.form {
+  position: absolute;
+  left: 136px;
+  top: 150px;
+}
+
+.input {
+  width: 400px;
+  margin-right: 100px;
+  padding: 20px 40px;
+  border-radius: 50px;
+  border: 2px solid #a27c82;
+  font-size: 20px;
+  transition: border 0.3s ease-in-out;
+}
+
+.input:hover {
+  border: 2px solid #4f3d40;
+}
+
+.button {
+  padding: 20px;
+  border-radius: 50px;
+  border: 2px solid #ddadaf;
+  font-size: 20px;
+  color: #4f3d40;
+  background-color: #ddadaf;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  border: 2px solid #4f3d40;
+}
+
+.button:active {
+  border: 2px solid #a27c82;
+  background-color: #a27c82;
+}
+
+.time {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: #4f3d40;
+}
